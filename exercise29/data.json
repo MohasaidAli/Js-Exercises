@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "name": "Yuusuf",
+    "city": "muqadish",
+    "orders": [
+        { "id": 1, "product": "iphone17", "quantity": 1 },
+        { "id": 2, "product": "iphone16", "quantity": 2 }
+    ]
+}
+
