@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise34</title>
+</head>
+<body>
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addItem()">addItem</button>
+    <button onclick="removeItem()">removeItem</button>
+    <script>
+        const list = document.querySelectorAll('#list')
+        function addItem(){
+            const anotherItem = document.createElement('li');
+            anotherItem.textContent = "another Item"
+            list.appendChild(anotherItem);
+        }
+        function removeItem(){
+            const list = document.querySelector("#list");
+            if(list.lastChild){
+                 list.removeChild(list.lastChild)
+            }else{ 
+                alert(" wey dhamaatay ciyaarta")
+            }
+           
+        }
+    </script>
+</body>
+</html>
